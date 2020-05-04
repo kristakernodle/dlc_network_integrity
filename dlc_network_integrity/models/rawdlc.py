@@ -23,6 +23,6 @@ class Rawdlc:
     def get_low_p_frames(self, bodypart, thresh=0.95):
         data = self.data[bodypart]
         low_p = data.loc[data['likelihood'] < thresh]
-        return low_p.index
+        return low_p.index.values
         
 
